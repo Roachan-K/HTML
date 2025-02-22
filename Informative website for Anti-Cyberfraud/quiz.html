@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Malware Identification Quiz</title>
+  <style>
+    body {
+      background-color: black;
+      color: white;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      width: 80%;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+    }
+    .question {
+      margin-bottom: 20px;
+    }
+    .options {
+      list-style-type: none;
+      padding: 0;
+    }
+    .options li {
+      margin-bottom: 10px;
+    }
+    input[type="radio"] {
+      margin-right: 10px;
+    }
+    input[type="submit"], input[type="reset"] {
+      background-color: white;
+      color: black;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      margin-right: 10px;
+    }
+    input[type="submit"]:hover, input[type="reset"]:hover {
+      background-color: gray;
+      color: white;
+    }
+    .answer {
+      display: none;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Malware Identification Quiz</h1>
+    <form id="quizForm">
+      <div class="question">
+        <p>1. Which type of malware disguises itself as a legitimate program?</p>
+        <ul class="options">
+          <li><input type="radio" name="q1" value="a"> Trojan</li>
+          <li><input type="radio" name="q1" value="b"> Worm</li>
+          <li><input type="radio" name="q1" value="c"> Adware</li>
+        </ul>
+        <div class="answer">Correct Answer: Trojan</div>
+      </div>
+      <!-- Add more questions here -->
+      <!-- Question 2 -->
+      <div class="question">
+        <p>2. Which type of malware spreads by sending copies of itself to other machines through a network?</p>
+        <ul class="options">
+          <li><input type="radio" name="q2" value="a"> Virus</li>
+          <li><input type="radio" name="q2" value="b"> Spyware</li>
+          <li><input type="radio" name="q2" value="c"> Ransomware</li>
+        </ul>
+        <div class="answer">Correct Answer: Virus</div>
+      </div>
+      <!-- Question 3 -->
+      <div class="question">
+        <p>3. Which type of malware encrypts files and demands payment for their release?</p>
+        <ul class="options">
+          <li><input type="radio" name="q3" value="a"> Worm</li>
+          <li><input type="radio" name="q3" value="b"> Ransomware</li>
+          <li><input type="radio" name="q3" value="c"> Rootkit</li>
+        </ul>
+        <div class="answer">Correct Answer: Ransomware</div>
+      </div>
+      <!-- Question 4 -->
+      <div class="question">
+        <p>4. Which type of malware records keystrokes to steal sensitive information such as passwords and credit card numbers?</p>
+        <ul class="options">
+          <li><input type="radio" name="q4" value="a"> Rootkit</li>
+          <li><input type="radio" name="q4" value="b"> Spyware</li>
+          <li><input type="radio" name="q4" value="c"> Adware</li>
+        </ul>
+        <div class="answer">Correct Answer: Spyware</div>
+      </div>
+      <!-- Question 5 -->
+      <div class="question">
+        <p>5. Which type of malware displays unwanted advertisements on a user's computer?</p>
+        <ul class="options">
+          <li><input type="radio" name="q5" value="a"> Rootkit</li>
+          <li><input type="radio" name="q5" value="b"> Adware</li>
+          <li><input type="radio" name="q5" value="c"> Worm</li>
+        </ul>
+        <div class="answer">Correct Answer: Adware</div>
+      </div>
+      <!-- Question 6 -->
+      <div class="question">
+        <p>6. Which type of malware launches a Distributed Denial of Service (DDoS) attack?</p>
+        <ul class="options">
+          <li><input type="radio" name="q6" value="a"> Trojan</li>
+          <li><input type="radio" name="q6" value="b"> Worm</li>
+          <li><input type="radio" name="q6" value="c"> Botnet</li>
+        </ul>
+        <div class="answer">Correct Answer: Botnet</div>
+      </div>
+      <!-- Question 7 -->
+      <div class="question">
+        <p>7. Which type of malware disguises itself as a harmless program but performs malicious activities in the background?</p>
+        <ul class="options">
+          <li><input type="radio" name="q7" value="a"> Rootkit</li>
+          <li><input type="radio" name="q7" value="b"> Spyware</li>
+          <li><input type="radio" name="q7" value="c"> Trojan</li>
+        </ul>
+        <div class="answer">Correct Answer: Trojan</div>
+      </div>
+      <!-- Question 8 -->
+      <div class="question">
+        <p>8. Which type of malware takes advantage of vulnerabilities in a computer system to gain unauthorized access?</p>
+        <ul class="options">
+          <li><input type="radio" name="q8" value="a"> Worm</li>
+          <li><input type="radio" name="q8" value="b"> Rootkit</li>
+          <li><input type="radio" name="q8" value="c"> Exploit Kit</li>
+        </ul>
+        <div class="answer">Correct Answer: Exploit Kit</div>
+      </div>
+      <!-- Question 9 -->
+      <div class="question">
+        <p>9. Which type of malware spreads by attaching itself to legitimate executable files?</p>
+        <ul class="options">
+          <li><input type="radio" name="q9" value="a"> Virus</li>
+          <li><input type="radio" name="q9" value="b"> Ransomware</li>
+          <li><input type="radio" name="q9" value="c"> Spyware</li>
+        </ul>
+        <div class="answer">Correct Answer: Virus</div>
+      </div>
+      <!-- Question 10 -->
+      <div class="question">
+        <p>10. Which type of malware monitors a user's web browsing habits and displays targeted advertisements?</p>
+        <ul class="options">
+          <li><input type="radio" name="q10" value="a"> Adware</li>
+          <li><input type="radio" name="q10" value="b"> Rootkit</li>
+          <li><input type="radio" name="q10" value="c"> Botnet</li>
+        </ul>
+        <div class="answer">Correct Answer: Adware</div>
+      </div>
+      <input type="submit" value="Submit">
+      <input type="reset" value="Reset">
+    </form>
+  </div>
+
+  <script>
+  document.getElementById('quizForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+    const answers = {
+      q1: 'a',
+      q2: 'a',
+      q3: 'b',
+      q4: 'b',
+      q5: 'b',
+      q6: 'c',
+      q7: 'c',
+      q8: 'c',
+      q9: 'a',
+      q10: 'a'
+    };
+    const submittedAnswers = {};
+    const inputs = document.querySelectorAll('input[type="radio"]:checked');
+    inputs.forEach(input => {
+      submittedAnswers[input.name] = input.value;
+    });
+    let score = 0; // Initialize score variable
+    const answerDivs = document.querySelectorAll('.answer');
+    answerDivs.forEach(answerDiv => {
+      const questionName = answerDiv.previousElementSibling.querySelector('input[type="radio"]').name;
+      if (submittedAnswers[questionName] === answers[questionName]) {
+        answerDiv.style.color = 'green';
+        score++; // Increment score for correct answers
+      } else {
+        answerDiv.style.color = 'red';
+      }
+      answerDiv.style.display = 'block';
+    });
+    // Display score in a dialog box
+    alert("Your total score is: " + score);
+  });
+</script>
+</body>
+</html>

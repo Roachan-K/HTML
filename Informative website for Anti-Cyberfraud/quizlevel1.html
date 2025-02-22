@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cybercrime Quiz</title>
+  <style>
+    body {
+      background-color: black;
+      color: white;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      width: 80%;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+    }
+    .question {
+      margin-bottom: 20px;
+    }
+    .options {
+      list-style-type: none;
+      padding: 0;
+    }
+    .options li {
+      margin-bottom: 10px;
+    }
+    input[type="radio"] {
+      margin-right: 10px;
+    }
+    input[type="submit"], input[type="reset"] {
+      background-color: white;
+      color: black;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      margin-right: 10px;
+    }
+    input[type="submit"]:hover, input[type="reset"]:hover {
+      background-color: gray;
+      color: white;
+    }
+    .answer {
+      display: none;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Cybercrime Quiz 1</h1>
+    <form id="quizForm">
+      <div class="question">
+        <p>1. What is the term used to describe the act of illegally accessing a computer system or network?</p>
+        <ul class="options">
+          <li><input type="radio" name="q1" value="a"> Hacking</li>
+          <li><input type="radio" name="q1" value="b"> Phishing</li>
+          <li><input type="radio" name="q1" value="c"> Spoofing</li>
+        </ul>
+        <div class="answer">Correct Answer: Hacking</div>
+      </div>
+      <!-- Add more questions here -->
+      <!-- Question 2 -->
+      <div class="question">
+        <p>2. What term refers to the fraudulent practice of sending emails purporting to be from reputable companies to trick individuals into revealing personal information?</p>
+        <ul class="options">
+          <li><input type="radio" name="q2" value="a"> Hacking</li>
+          <li><input type="radio" name="q2" value="b"> Phishing</li>
+          <li><input type="radio" name="q2" value="c"> Malware</li>
+        </ul>
+        <div class="answer">Correct Answer: Phishing</div>
+      </div>
+      <!-- Question 3 -->
+      <div class="question">
+        <p>3. What is the term used to describe the practice of creating a fake website that resembles a legitimate one in order to deceive visitors and obtain their personal information?</p>
+        <ul class="options">
+          <li><input type="radio" name="q3" value="a"> Hacking</li>
+          <li><input type="radio" name="q3" value="b"> Spoofing</li>
+          <li><input type="radio" name="q3" value="c"> Pharming</li>
+        </ul>
+        <div class="answer">Correct Answer: Pharming</div>
+      </div>
+      <!-- Question 4 -->
+      <div class="question">
+        <p>4. What term describes a type of malware that restricts access to a computer system until a ransom is paid?</p>
+        <ul class="options">
+          <li><input type="radio" name="q4" value="a"> Ransomware</li>
+          <li><input type="radio" name="q4" value="b"> Spyware</li>
+          <li><input type="radio" name="q4" value="c"> Trojan</li>
+        </ul>
+        <div class="answer">Correct Answer: Ransomware</div>
+      </div>
+      <!-- Question 5 -->
+      <div class="question">
+        <p>5. What is the term used to describe the unauthorized copying, distribution, or use of copyrighted materials?</p>
+        <ul class="options">
+          <li><input type="radio" name="q5" value="a"> Piracy</li>
+          <li><input type="radio" name="q5" value="b"> Counterfeiting</li>
+          <li><input type="radio" name="q5" value="c"> Identity Theft</li>
+        </ul>
+        <div class="answer">Correct Answer: Piracy</div>
+      </div>
+      <!-- Question 6 -->
+      <div class="question">
+        <p>6. What term refers to the act of using someone else's identity, typically for financial gain?</p>
+        <ul class="options">
+          <li><input type="radio" name="q6" value="a"> Phishing</li>
+          <li><input type="radio" name="q6" value="b"> Identity Theft</li>
+          <li><input type="radio" name="q6" value="c"> Hacking</li>
+        </ul>
+        <div class="answer">Correct Answer: Identity Theft</div>
+      </div>
+      <!-- Question 7 -->
+      <div class="question">
+        <p>7. What is the term used to describe the practice of sending unsolicited bulk messages, typically advertising, to a large number of recipients?</p>
+        <ul class="options">
+          <li><input type="radio" name="q7" value="a"> Hacking</li>
+          <li><input type="radio" name="q7" value="b"> Spamming</li>
+          <li><input type="radio" name="q7" value="c"> Spoofing</li>
+        </ul>
+        <div class="answer">Correct Answer: Spamming</div>
+      </div>
+      <!-- Question 8 -->
+      <div class="question">
+        <p>8. What term refers to the act of gaining unauthorized access to information or data stored on a computer system?</p>
+        <ul class="options">
+          <li><input type="radio" name="q8" value="a"> Phishing</li>
+          <li><input type="radio" name="q8" value="b"> Hacking</li>
+          <li><input type="radio" name="q8" value="c"> Spoofing</li>
+        </ul>
+        <div class="answer">Correct Answer: Hacking</div>
+      </div>
+      <!-- Question 9 -->
+      <div class="question">
+        <p>9. What is the term used to describe the act of creating and distributing malicious software with the intent to cause harm?</p>
+        <ul class="options">
+          <li><input type="radio" name="q9" value="a"> Phishing</li>
+          <li><input type="radio" name="q9" value="b"> Spoofing</li>
+          <li><input type="radio" name="q9" value="c"> Malware</li>
+        </ul>
+        <div class="answer">Correct Answer: Malware</div>
+      </div>
+      <!-- Question 10 -->
+      <div class="question">
+        <p>10. What is the term used to describe the act of stealing someone's personal information and using it without permission, typically for financial gain?</p>
+        <ul class="options">
+          <li><input type="radio" name="q10" value="a"> Identity Theft</li>
+          <li><input type="radio" name="q10" value="b"> Phishing</li>
+          <li><input type="radio" name="q10" value="c"> Hacking</li>
+        </ul>
+        <div class="answer">Correct Answer: Identity Theft</div>
+      </div>
+      <input type="submit" value="Submit">
+      <input type="reset" value="Reset">
+    </form>
+  </div>
+
+  <script>
+  document.getElementById('quizForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+    const answers = {
+      q1: 'a',
+      q2: 'b',
+      q3: 'c',
+      q4: 'a',
+      q5: 'a',
+      q6: 'b',
+      q7: 'b',
+      q8: 'b',
+      q9: 'c',
+      q10: 'a'
+    };
+    const submittedAnswers = {};
+    const inputs = document.querySelectorAll('input[type="radio"]:checked');
+    inputs.forEach(input => {
+      submittedAnswers[input.name] = input.value;
+    });
+    let score = 0; // Initialize score variable
+    const answerDivs = document.querySelectorAll('.answer');
+    answerDivs.forEach(answerDiv => {
+      const questionName = answerDiv.previousElementSibling.querySelector('input[type="radio"]').name;
+      if (submittedAnswers[questionName] === answers[questionName]) {
+        answerDiv.style.color = 'green';
+        score++; // Increment score for correct answers
+      } else {
+        answerDiv.style.color = 'red';
+      }
+      answerDiv.style.display = 'block';
+    });
+    // Display score in a dialog box
+    alert("Your total score is: " + score);
+  });
+</script>
+</body>
+</html>
